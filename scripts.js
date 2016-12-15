@@ -93,5 +93,16 @@ new ScrollMagic.Scene({triggerElement: "#erik",duration:"200px",triggerHook:0.35
           .setPin("#skills li:nth-child(5)") // pins the element for the the scene's duration
           .addTo(controller);
 
+$('.background-tint').mouseover(function(){
+  $(this).find('.zoom').css("left", "0");
+});
+$('.background-tint').mouseleave(function(){
+  $(this).find('.zoom').css("left", "1000px");
+  var select = $(this).find('.zoom')
+  //setTimeout(function(){$(this).find('.zoom').css("z-index", "-10")},500);
+  setTimeout(function(){select.css("left", "-1000px")},200);
+  setTimeout(function(){select.css("z-index", "-10")},200);
+  setTimeout(function(){select.css("z-index", "1")},500);
+});
 
 });

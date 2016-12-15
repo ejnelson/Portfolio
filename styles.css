@@ -230,6 +230,7 @@ font-size:30px;
 font-family: 'Bungee', cursive;
 padding-left:none;
   left:65%;
+
 }
 #skills li:nth-child(1){
   position:absolute;
@@ -256,25 +257,56 @@ padding-left:none;
   height:200px;
   position:absolute;
   width:100%;
+  font-size:50px;
+  padding:none;
+  font-family: "Montserrat", sans-serif;
+  text-align:center;
+  padding:75px 0px;
+  color:white;
+  overflow:hidden;
 }
+.background-tint {
+  background-color: rgba(256,256,256,1);
+  background-blend-mode: normal;
+  transition: all 0.5s ease-in-out;
+
+}
+.background-tint:hover{
+  background-color: rgba(00,0,0,0.5);
+  background-blend-mode: multiply;
+cursor:pointer;
+}
+.zoom{
+  position:relative;
+  left:-1000px;
+  transition:left .4s ease-in-out;
+}
+.zoomed{
+  left:0px;
+}
+
 #projects li:nth-child(1){
-background-color: #FFD;
+background-color:#eee;
   top: 4000px;
+color:black;
+
 }
 #projects li:nth-child(2){
-background-color: #FFA;
-  top: 4200px;
+background-image:url(img/matching_game.png);
+top: 4200px;
+
 }
 #projects li:nth-child(3){
-background-color: #FF8;
+background-image:url(img/pong.png);
+
   top: 4400px;
 }
 #projects li:nth-child(4){
-background-color: #FF5;
+background-image:url(img/matching_game.png);
   top: 4600px;
 }
 #projects li:nth-child(5){
-background-color: #FF2;
+background-image:url(img/matching_game.png);
   top: 4800px;
 }
 
